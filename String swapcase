@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    char s[50];
+    scanf("%[^\n]s",&s);
+    int i;
+    for(i=0;s[i]!='\0';i++)
+    {
+        if(s[i]>=65&&s[i]<=90)
+        {
+            s[i]=s[i]+32;
+        }
+        else if(s[i]>=97&&s[i]<=122)
+        {
+            s[i]=s[i]-32;
+        }
+    }
+printf("%s",s);
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
+
+ 
